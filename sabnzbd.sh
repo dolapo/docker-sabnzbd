@@ -6,6 +6,7 @@ set -e
 #
 echo "Europe/London" > /etc/timezone
 ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime
+dpkg-reconfigure -f noninteractive tzdata >/dev/null 2>&1
 
 USER="sabnzbd"
 
