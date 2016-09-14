@@ -4,6 +4,8 @@ set -e
 #
 # Display settings on standard out.
 #
+echo "Europe/London" > /etc/timezone
+ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime
 
 USER="sabnzbd"
 
